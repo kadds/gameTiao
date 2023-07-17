@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no,minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="full-screen" content="yes"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>跳一跳</title>
+    <script src="js/cannon.js"></script>
+    <script src="js/comonutil.js"></script>
+</head>
+<body>
+    <style>
+    @font-face { 
+        font-family : f_number; 
+        src : url("res/num.ttf") format("TrueType"); 
+    };
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    button {
+        transition: all 200ms;
+    }
+    button:active {
+        transform: scale(0.9,0.9);
+    }
+    div {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        font-family:  f_number;
+    }
+    html,body{  
+        width:100%;  
+        height:100%;
+        overflow: hidden; 
+        margin: 0;
+        padding: 0;
+    }
+    #gameContent{
+        margin: 0 auto;
+        text-align: center;
+    }
+    </style>
+
+    <div id="gameContent"></div>
+<script type="text/javascript" src="bundle-d8b465e538ae82a3308b.js"></script></body>
+</html>
